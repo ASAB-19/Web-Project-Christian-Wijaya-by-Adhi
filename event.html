@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Signup | Christian Wijaya</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+<header>
+    <div class="container logo-container">
+    <div class="logo-group">
+      <img src="assets/logo.png" class="brand-icon" />
+      <img src="assets/logo-name.png" class="brand-name" />
+    </div>
+  </div>
+  <nav>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <section class="event-form-section">
+      <div class="container">
+        <h2>Be the Face of Batik</h2>
+        <p>Sign up below to become part of our next luxury fashion show event.</p>
+
+        <div class="model-image">
+            <img src="assets/runway.png" alt="Model" />
+        </div>
+
+        <form id="modelForm" onsubmit="return validateForm()">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" />
+
+          <label>Gender:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male" /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+          </div>
+
+          <label>
+            <input type="checkbox" id="terms" />
+            I agree to the terms and conditions
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="formMessage"></div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+    <div class="container footer-content">
+    <div class="footer-column">
+      <h4>Christian Wijaya</h4>
+      <p>Luxury fashion house blending heritage with modern innovation.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: info@christianwijaya.com</p>
+      <p>Phone: +62 812-3456-7890</p>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <p><a href="#">Instagram</a></p>
+      <p><a href="#">Facebook</a></p>
+      <p><a href="#">Twitter</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Christian Wijaya. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
